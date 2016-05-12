@@ -28,5 +28,5 @@ job中`原始碼管理 > git > Repositories url` 要設定要對應到bitbucket�
 * job中`建置觸發程序`> `Build when a change is pushed to BitBucket`打勾，之後jenkins收到bitbucket傳來的request會觸發有打勾的所有job並且job設定的repository url是監聽的url
 
 
-
+> [下一頁：jenkins設定](jenkinssetup.md)
 
