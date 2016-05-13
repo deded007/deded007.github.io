@@ -1,19 +1,39 @@
-===== bitbucket =====
-1．bitbucket網站上設定hook：
-→先找到目标项目的配置页面，然后在配置下看到 Webhooks，选择 “Add Webhooks"。
-→URL 的格式是 YOUR_JENKINS_URL/bitbucket-hook/ (最后的这个斜杠不能省掉)。如此保存就可以了。(http://210.59.250.227:8080/bitbucket-hook/)
-→成功可試著push到bitbucket上，在bitbucket上在剛剛的webhook裡可以看傳送到url的歷史記錄，actions→view requests，以及
-   在jenkins的/log/也可以看bigbucket推送過來的request
-   
-   
-===== jenkins =====
-2．安裝外掛：Bitbucket Plugin
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Deded007.GitHub.io by deded007</title>
 
-3．job中「原始碼管理」→「git」→「Repositories url」要設定要監聽的bitbucket url( https://bitbucket.org/mnpb/hushanweb.git )，如果是私有repository要設定credentials
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Deded007.GitHub.io</h1>
+        <p></p>
 
-4．job中「建置觸發程序」→「Build when a change is pushed to BitBucket」打勾，
-之後jenkins收到bitbucket傳來的request會觸發有打勾的所有job並且job設定的repository url是監聽的url
 
+        <p class="view"><a href="https://github.com/deded007">View My GitHub Profile</a></p>
 
-
-
+      </header>
+      <section>
+        <ul>
+<li><a href="b2j.md">程式push到Bitbucket通知Jenkins</a></li>
+<li><a href="deployServer.md">Deploy到Server</a></li>
+<li><a href="jenkinsSetup.md">jenkins設定</a></li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
